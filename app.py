@@ -2,15 +2,15 @@ from flask import Flask, render_template, request, url_for
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Base, Book, engine
-from create_db import create_books
+from create_db import create_books, session
 
 
 app = Flask(__name__)
 
-Base.metadata.bind = engine
+#Base.metadata.bind = engine
 
-DBSession = sessionmaker(bind=engine)
-session = DBSession()
+#DBSession = sessionmaker(bind=engine)
+#session = DBSession()
 
 @app.route('/')
 def index():
