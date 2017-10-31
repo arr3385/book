@@ -7,11 +7,6 @@ from create_db import create_books, session
 
 app = Flask(__name__)
 
-#Base.metadata.bind = engine
-
-#DBSession = sessionmaker(bind=engine)
-#session = DBSession()
-
 @app.route('/')
 def index():
 	return render_template('hello.html')
