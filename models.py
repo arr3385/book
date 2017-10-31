@@ -1,5 +1,5 @@
 '''
-This file defines the models for a restauarnt
+This file defines the models for a book
 '''
 # for manipulating diff parts of Python's run-time environment
 import sys
