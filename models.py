@@ -36,7 +36,7 @@ Base.metadata.drop_all(engine)
 Base.metadata.create_all(engine)
 
 # try to run this file:
-# python database_setup.py
+# python create_db.py
 # you may receive the following error:
 # ImportError: No module named 'psycopg2'
 # This indicates that you need to install 'psycopg2' module
